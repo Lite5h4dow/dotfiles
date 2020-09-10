@@ -1,4 +1,4 @@
-#My Dotfiles
+# My Dotfiles
 
 These are my dotfiles to be used with Stow
 
