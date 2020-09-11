@@ -2,7 +2,7 @@
 
 These are my dotfiles to be used with Stow
 
-- WM: bspwm
+- WM: [bspwm (Javyre Fork)](https://github.com/Javyre/bspwm)
 - Menu Bar: polybar
 - Launcher Menu: rofi
 - Shortcut daemon: shxkd
