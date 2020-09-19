@@ -1,1 +1,4 @@
-/home/lotus/.config/rofi/config.rasi
+configuration{
+  modi: "drun,window,ssh";
+  theme: "slateMod";
+}
