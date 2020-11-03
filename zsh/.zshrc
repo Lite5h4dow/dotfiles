@@ -2,28 +2,30 @@ ssh-add -l &>/dev/null
 
 cd ~
 #-----WSL Network Display---------
-export WSL_IP=$(cat /etc/resolv.conf | grep nameserver | cut -d' ' -f2)
+#export WSL_IP=$(cat /etc/resolv.conf | grep nameserver | cut -d' ' -f2)
 
-export PULSE_SERVER=tcp:$WSL_IP
-export DISPLAY=$WSL_IP:0.0
+#export PULSE_SERVER=tcp:$WSL_IP
+#export DISPLAY=$WSL_IP:0.0
 
 #-----Android Studio Exports------
 
-export ANDROID_HOME=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
+#export ANDROID_HOME=$HOME/Android/Sdk
+#export PATH=$PATH:$ANDROID_HOME/emulator
+#export PATH=$PATH:$ANDROID_HOME/tools
+#export PATH=$PATH:$ANDROID_HOME/tools/bin
+#export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-export _JAVA_AWT_WM_NONREPARENTING=1
+#export _JAVA_AWT_WM_NONREPARENTING=1
 
-export REPO_OS_OVERRIDE="linux"
+#export REPO_OS_OVERRIDE="linux"
 
-adb kill-server 2> /dev/null
-socat -d -d TCP-LISTEN:5037,reuseaddr,fork TCP:$WSL_IP:5037 &
+#adb kill-server 2> /dev/null
+#socat -d -d TCP-LISTEN:5037,reuseaddr,fork TCP:$WSL_IP:5037 &
 
 #-----Auto Gen ZSH Config---------
 
+#-----Initialise Node Version Manager -----
+source /usr/share/nvm/init-nvm.sh
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
