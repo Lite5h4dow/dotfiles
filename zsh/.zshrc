@@ -1,11 +1,11 @@
 ssh-add -l &>/dev/null
 
-cd ~
+# cd ~
 #-----WSL Network Display---------
-#export WSL_IP=$(cat /etc/resolv.conf | grep nameserver | cut -d' ' -f2)
+export WSL_IP=$(cat /etc/resolv.conf | grep nameserver | cut -d' ' -f2)
 
-#export PULSE_SERVER=tcp:$WSL_IP
-#export DISPLAY=$WSL_IP:0.0
+export PULSE_SERVER=tcp:$WSL_IP
+export DISPLAY=$WSL_IP:0.0
 
 #-----Android Studio Exports------
 
